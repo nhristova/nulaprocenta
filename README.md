@@ -65,12 +65,13 @@ nulaprocenta.com new website to substitute the Flash version
 
 ## Routes
 - /models - default (home)
+- /models/:year ?? q=year
 - /models/:modelId
-- /painter
+- /configurator
 - /gallery
 - /gallery/:galleryItemId
 - /blog
-- /blog/:blogItemId
+- /blog/:blogPostId
 - /q&a
 - /contacts
 - /about
@@ -80,7 +81,7 @@ nulaprocenta.com new website to substitute the Flash version
     - [ ] manifest file
     - [ ] cache resources with service worker - pages html, css, images
 - TypeScript?
-- React?
+- React or [Web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)?
 - CI / CD - Netlify?
 - Unit tests
-- Database - firebase or GraphQL?
+- Database - firebase or GraphQL? https://www.prisma.io/blog/graphql-vs-firebase-496498546142
