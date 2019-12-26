@@ -1,0 +1,11 @@
+.red {
+    fill: rgb(255, 0, 0);
+}
+
+.blue {
+    fill: rgb(0, 0, 255);
+}
+
+.green {
+    fill: rgb(0, 255, 0);
+}
