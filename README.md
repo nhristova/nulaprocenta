@@ -16,29 +16,29 @@ nulaprocenta.com new website to substitute the Flash version
     - [ ] Database to store orders
 3. Payment options - bank transfer, online card payment
 4. Content management functionalities
+    - [ ] Load lists from database - models, gallery, blog
     - [ ] Add/edit model
     - [ ] Add/edit posts
     - [ ] Add/edit gallery
 
 ## Requirements
-1. Pages list - see concept_c.pdf
-    - Models (pre-defined per season)
-    - Configurator
+1. Pages list (public) - see concept_c.pdf
+    - Models (pre-defined per season) / default page
+    - Configurator / custom model
     - Gallery
     - Blog
     - Q&A
     - Contacts
     - About us
     - Shopping cart
-    - Admin
 1. Painter SVG section
     - Create painting functionality
         - hat loads with a certain design 
         - the user can modify the colors - when hovering over a stripe - a popup colour dial appears (centred on the cursor) - clicking a colour changes the hovered stripe color
         - add remove elements - pompom, ear flaps
     - When edit completed - a hat object is created/sent to cart and a screen-shot of the hat - price is calculated based on the hat object properties
-
 3.  Admin page 
+    - Add new model
     - Add new post to blog
     - Add new item in gallery
     - Orders list
@@ -48,7 +48,6 @@ nulaprocenta.com new website to substitute the Flash version
     - orders
     - posts
     - gallery 
-
 
     ```json
     // hat model properties
@@ -64,3 +63,24 @@ nulaprocenta.com new website to substitute the Flash version
     }
     ```
 
+## Routes
+- /models - default (home)
+- /models/:modelId
+- /painter
+- /gallery
+- /gallery/:galleryItemId
+- /blog
+- /blog/:blogItemId
+- /q&a
+- /contacts
+- /about
+
+## Tech
+- Progressive web app
+    - [ ] manifest file
+    - [ ] cache resources with service worker - pages html, css, images
+- TypeScript?
+- React?
+- CI / CD - Netlify?
+- Unit tests
+- Database - firebase or GraphQL?
