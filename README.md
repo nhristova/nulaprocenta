@@ -2,7 +2,7 @@
 nulaprocenta.com new website to substitute the Flash version
 
 ## Links
-- static page https://nhristova.github.io/nulaprocenta/
+- static page https://nhristova.github.io/nulaprocenta/static
 - current page http://nulaprocenta.com/
 
 ## Work plan

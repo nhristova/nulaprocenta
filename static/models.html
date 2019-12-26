@@ -12,11 +12,18 @@
 
 <body class="light-theme">
     <header>
-        <nav class="header-navigation">
-            <a href="./models" class="navigation-link navigation-home-link">
+        <div class="header-links">
+            <a href="./models" class="navigation-link">
                 <img src="./imgs/home-icon.svg" width="100" alt="модели">
                 <div>модели</div>
             </a>
+            <a id="header-hamburger" class="header-hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" />
+                </svg>
+            </a>
+        </div>
+        <nav id="header-navigation" class="header-navigation">
             <a href="./configurator" class="navigation-link">
                 <img src="./imgs/yarn-icon.svg" width="50" alt="гаправи си шапка">
                 <div>конфигуратор</div>
@@ -46,51 +53,51 @@
 
     <main class="models-main">
         <div class="models-list">
-            <div class="models-item-card">
-                <img class="models-item-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
-                <div class="models-item-detail">
+            <div class="model-card">
+                <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
+                <div class="model-card-detail">
                     <a href="./models/:modelId">виж</a>
                     <span>30 лв.</span>
                 </div>
             </div>
-            <div class="models-item-card">
-                <img class="models-item-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
-                <div class="models-item-detail">
+            <div class="model-card">
+                <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
+                <div class="model-card-detail">
                     <a href="./models/:modelId">виж</a>
                     <span>30 лв.</span>
                 </div>
             </div>
-            <div class="models-item-card">
-                <img class="models-item-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
-                <div class="models-item-detail">
+            <div class="model-card">
+                <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
+                <div class="model-card-detail">
                     <a href="./models/:modelId">виж</a>
                     <span>30 лв.</span>
                 </div>
             </div>
-            <div class="models-item-card">
-                <img class="models-item-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
-                <div class="models-item-detail">
+            <div class="model-card">
+                <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
+                <div class="model-card-detail">
                     <a href="./models/:modelId">виж</a>
                     <span>30 лв.</span>
                 </div>
             </div>
-            <div class="models-item-card">
-                <img class="models-item-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
-                <div class="models-item-detail">
+            <div class="model-card">
+                <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
+                <div class="model-card-detail">
                     <a href="./models/:modelId">виж</a>
                     <span>30 лв.</span>
                 </div>
             </div>
-            <div class="models-item-card">
-                <img class="models-item-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
-                <div class="models-item-detail">
+            <div class="model-card">
+                <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
+                <div class="model-card-detail">
                     <a href="./models/:modelId">виж</a>
                     <span>30 лв.</span>
                 </div>
             </div>
-            <div class="models-item-card">
-                <img class="models-item-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
-                <div class="models-item-detail">
+            <div class="model-card">
+                <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
+                <div class="model-card-detail">
                     <a href="./models/:modelId">виж</a>
                     <span>30 лв.</span>
                 </div>
@@ -98,6 +105,16 @@
         </div>
     </main>
 
+    <script>
+        const hamburger = document.getElementById("header-hamburger");
+        const navigation = document.getElementById("header-navigation");
+
+        hamburger.addEventListener("click", (event) => {
+            navigation.classList.toggle("header-navigation--open");
+            event.stopPropagation();
+        });
+
+    </script>
 </body>
 
 </html>

@@ -20,7 +20,7 @@
 
 * {
   font-family: "Helen Bg Light", "Open Sans Light", "Open Sans", sans-serif;
-  color: var(--default-font-color);
+  color: var(--font-color-default);
   font-size: 17px;
   line-height: 20px;
   margin: 0;
@@ -28,12 +28,15 @@
 
 :root {
   /* Palette colours */
+  --color0: #fff;
   --color1: #000;
   --color2: #e5e9f2;
+  --color3: #999;
 }
 
 body.light-theme {
-  --default-font-color: var(--color1);
+  --font-color-default: var(--color1);
+  --background-icon-default: var(--color3);
   --border-color: var(--color2);
 }
 
@@ -59,18 +62,50 @@ a {
   margin: 30px 0 10px 0;
 }
 
-.header-navigation {
+header {
   display: flex;
   flex-wrap: wrap;
+}
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.header-hamburger {
+  padding: 10px;
+  width: 50px;
+  fill: var(--background-icon-default);
+}
+.header-navigation {
+  align-items: center;
+  display: none;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 100%;
+}
+.header-navigation--open {
+  display: inline-flex;
 }
 
 .navigation-link {
-  display: inline-block;
   min-width: 70px;
   text-align: center;
 }
 
-.navigation-home-link {
-  margin-right: 40px;
+@media screen and (min-width: 600px) {
+  header {
+    justify-content: space-between;
+  }
+  .header-links {
+    width: initial;
+    margin-bottom: initial;
+  }
+  .header-hamburger {
+    display: none;
+  }
+  .header-navigation {
+    width: initial;
+    display: inline-flex;
+  }
 }
