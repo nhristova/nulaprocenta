@@ -2,7 +2,7 @@
 nulaprocenta.com new website to substitute the Flash version
 
 ## Links
-- static page https://nhristova.github.io/nulaprocenta/
+- static page https://nhristova.github.io/nulaprocenta/static
 - current page http://nulaprocenta.com/
 
 ## Work plan
@@ -85,3 +85,4 @@ nulaprocenta.com new website to substitute the Flash version
 - CI / CD - Netlify?
 - Unit tests
 - Database - firebase or GraphQL? https://www.prisma.io/blog/graphql-vs-firebase-496498546142
+- SEO - robots.txt?
