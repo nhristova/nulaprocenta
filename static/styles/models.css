@@ -1,0 +1,38 @@
+.models-main {
+  margin: 20px auto;
+}
+
+.models-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.models-item-card {
+  min-width: 100px;
+  max-width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.models-item-image {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.models-item-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .models-main {
+    width: 70vw;
+    max-width: 700px;
+  }
+  .models-item-card {
+    max-width: 40%;
+  }
+}
