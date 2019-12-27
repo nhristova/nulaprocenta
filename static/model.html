@@ -36,10 +36,12 @@
                 </div>
                 <div class="model-item-option">
                     <span>материал</span>
-                    <select name="hat-material" id="hat-material">
-                        <option value="wool" selected>вълна</option>
-                        <option value="cotton">памук</option>
-                    </select>
+                    <fieldset id="hat-material">
+                        <input type="radio" id="hat-material-wool" name="hat-material" value="wool" checked>
+                        <label for="hat-material-wool">вълна</label>
+                        <input type="radio" id="hat-material-cotton" name="hat-material" value="cotton">
+                        <label for="hat-material-cotton">памук</label>
+                    </fieldset>
                 </div>
                 <div class="model-item-option">
                     <span>дебелина</span>
@@ -70,7 +72,11 @@
                 <div class="model-item-option">
                     <span>коментар</span>
                     <textarea name="hat-comment" id="hat-comment" cols="20" rows="5"
-                        placeholder="специални инструкции - ако шапката е за дете, въведете точна обиколка"></textarea>
+                        placeholder="специални инструкции*"></textarea>
+                </div>
+                <div class="model-item-option">
+                    <span></span>
+                    <span>* ако шапката е за дете, въведете точна обиколка</span>
                 </div>
                 <div class="model-item-summary">
                     <div class="model-item-price">
