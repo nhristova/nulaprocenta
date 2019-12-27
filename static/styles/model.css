@@ -1,10 +1,17 @@
+.model-container {
+    margin: 20px auto;
+    max-width: 900px;
+}
+
 .model-item-left,
 .model-item-right {
     padding: 10px;
+    text-align: center;
 }
 
 .model-item-image {
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
 }
 
 .model-item-order {
@@ -42,9 +49,10 @@
 }
 
 .model-item-summary {
-    margin-top: auto;
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
+    padding-top: 20px;
     text-align: right;
 }
 
@@ -66,5 +74,11 @@
     .model-item-left,
     .model-item-right {
         width: 50%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .model-container {
+        width: 70vw;
     }
 }
