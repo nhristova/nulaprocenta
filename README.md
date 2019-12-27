@@ -65,8 +65,8 @@ nulaprocenta.com new website to substitute the Flash version
 
 ## Routes
 - /models - default (home)
-- /models/:year ?? q=year
-- /models/:modelId
+- /models/:year or ?year=2019
+- /models/:modelId or ?model=201901
 - /configurator
 - /gallery
 - /gallery/:galleryItemId
