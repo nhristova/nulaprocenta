@@ -1,111 +1,95 @@
 /* @font-face by https://www.1001fonts.com/ */
 @font-face {
-  font-family: "Open Sans Light";
-  src: url("OpenSans-Light.eot?") format("eot"),
-    url("OpenSans-Light.woff") format("woff"),
-    url("OpenSans-Light.ttf") format("truetype"),
-    url("OpenSans-Light.svg#OpenSans-Light") format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Open Sans Light";
+    src: url("OpenSans-Light.eot?") format("eot"),
+        url("OpenSans-Light.woff") format("woff"),
+        url("OpenSans-Light.ttf") format("truetype"),
+        url("OpenSans-Light.svg#OpenSans-Light") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Helen Bg Light";
-  src: url("Helen Bg Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Helen Bg Light";
+    src: url("Helen Bg Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic");
 
 * {
-  font-family: "Helen Bg Light", "Open Sans Light", "Open Sans", sans-serif;
-  color: var(--font-color-default);
-  font-size: 17px;
-  line-height: 20px;
-  margin: 0;
+    box-sizing: border-box;
+    font-family: "Helen Bg Light", "Open Sans Light", "Open Sans", sans-serif;
+    color: var(--font-color-default);
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0;
 }
 
 :root {
-  /* Palette colours */
-  --color0: #fff;
-  --color1: #000;
-  --color2: #e5e9f2;
-  --color3: #999;
+    /* Palette colours */
+    --color0: #fff;
+    --color1: #000;
+    --color2: #e5e9f2;
+    --color3: #999;
 }
 
 body.light-theme {
-  --font-color-default: var(--color1);
-  --background-icon-default: var(--color3);
-  --border-color: var(--color2);
+    --font-color-default: var(--color1);
+    --background-icon-default: var(--color3);
+    --border-color: var(--color2);
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-.home-main {
-  text-align: center;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 500px;
+main {
+    padding: 10px;
 }
 
-.heading-1 {
-  font-size: 2em;
-  margin: 10px 0 30px 0;
+.header-container {
+    padding: 10px;
+}
+.header-row-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header-row-bottom {
+    margin-top: 20px;
 }
 
-.home-models {
-  margin: 30px 0 10px 0;
-}
-
-header {
-  display: flex;
-  flex-wrap: wrap;
-}
-.header-links {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 20px;
-}
 .header-hamburger {
-  padding: 10px;
-  width: 50px;
-  fill: var(--background-icon-default);
+    padding: 10px;
+    width: 50px;
+    fill: var(--background-icon-default);
 }
 .header-navigation {
-  align-items: center;
-  display: none;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
+    align-items: center;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 100%;
 }
 .header-navigation--open {
-  display: inline-flex;
+    display: inline-flex;
 }
 
 .navigation-link {
-  min-width: 70px;
-  text-align: center;
+    min-width: 70px;
+    text-align: center;
 }
 
 @media screen and (min-width: 600px) {
-  header {
-    justify-content: space-between;
-  }
-  .header-links {
-    width: initial;
-    margin-bottom: initial;
-  }
-  .header-hamburger {
-    display: none;
-  }
-  .header-navigation {
-    width: initial;
-    display: inline-flex;
-  }
+    .header-hamburger {
+        display: none;
+    }
+    .header-navigation {
+        display: inline-flex;
+        margin-top: initial;
+        width: initial;
+    }
 }

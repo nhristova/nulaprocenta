@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 
 <head>
     <meta charset="UTF-8">
@@ -7,114 +7,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/shared.css">
     <link rel="stylesheet" href="./styles/models.css">
-    <title>Модели</title>
+    <title>модели</title>
 </head>
 
 <body class="light-theme">
-    <header>
-        <div class="header-links">
-            <a href="./models" class="navigation-link">
-                <img src="./imgs/home-icon.svg" width="100" alt="модели">
-                <div>модели</div>
-            </a>
-            <a id="header-hamburger" class="header-hamburger">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" />
-                </svg>
-            </a>
-        </div>
-        <nav id="header-navigation" class="header-navigation">
-            <a href="./configurator" class="navigation-link">
-                <img src="./imgs/yarn-icon.svg" width="50" alt="гаправи си шапка">
-                <div>конфигуратор</div>
-            </a>
-            <a href="./gallery" class="navigation-link">
-                <img src="./imgs/camera-icon.svg" width="50" alt="галерия">
-                <div>галерия</div>
-            </a>
-            <a href="./blog" class="navigation-link">
-                <img src="./imgs/feather-icon.svg" width="50" alt="блог">
-                <div>блог</div>
-            </a>
-            <a href="./qanda" class="navigation-link">
-                <img src="./imgs/question-icon.svg" width="50" alt="въпроси">
-                <div>въпроси</div>
-            </a>
-            <a href="./contacts" class="navigation-link">
-                <img src="./imgs/circles-icon.svg" width="50" alt="контакти">
-                <div>контакти</div>
-            </a>
-            <a href="./about" class="navigation-link">
-                <img src="./imgs/alert-icon.svg" width="50" alt="за нас">
-                <div>за нас</div>
-            </a>
-        </nav>
-    </header>
+    <script src="./scripts/header.js"></script>
+    <script>        
+        generateHeader(['начало', 'модели', '2019']);
+    </script>
 
-    <main class="models-main">
+    <main class="models-container">
         <div class="models-list">
             <div class="model-card">
                 <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
                 <div class="model-card-detail">
-                    <a href="./models/:modelId">виж</a>
+                    <a href="./model">виж</a>
                     <span>30 лв.</span>
                 </div>
             </div>
             <div class="model-card">
                 <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
                 <div class="model-card-detail">
-                    <a href="./models/:modelId">виж</a>
+                    <a href="./model">виж</a>
                     <span>30 лв.</span>
                 </div>
             </div>
             <div class="model-card">
                 <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
                 <div class="model-card-detail">
-                    <a href="./models/:modelId">виж</a>
+                    <a href="./model">виж</a>
                     <span>30 лв.</span>
                 </div>
             </div>
             <div class="model-card">
                 <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
                 <div class="model-card-detail">
-                    <a href="./models/:modelId">виж</a>
+                    <a href="./model">виж</a>
                     <span>30 лв.</span>
                 </div>
             </div>
             <div class="model-card">
                 <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
                 <div class="model-card-detail">
-                    <a href="./models/:modelId">виж</a>
+                    <a href="./model">виж</a>
                     <span>30 лв.</span>
                 </div>
             </div>
             <div class="model-card">
                 <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
                 <div class="model-card-detail">
-                    <a href="./models/:modelId">виж</a>
+                    <a href="./model">виж</a>
                     <span>30 лв.</span>
                 </div>
             </div>
             <div class="model-card">
                 <img class="model-card-image" src="./imgs/model-item-000.jpg" alt="Модел 000">
                 <div class="model-card-detail">
-                    <a href="./models/:modelId">виж</a>
+                    <a href="./model">виж</a>
                     <span>30 лв.</span>
                 </div>
             </div>
         </div>
     </main>
 
-    <script>
-        const hamburger = document.getElementById("header-hamburger");
-        const navigation = document.getElementById("header-navigation");
-
-        hamburger.addEventListener("click", (event) => {
-            navigation.classList.toggle("header-navigation--open");
-            event.stopPropagation();
-        });
-
-    </script>
+    <script async defer src="./scripts/main.js"></script>
 </body>
 
 </html>
