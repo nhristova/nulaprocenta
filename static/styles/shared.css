@@ -19,6 +19,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic");
 
 * {
+    box-sizing: border-box;
     font-family: "Helen Bg Light", "Open Sans Light", "Open Sans", sans-serif;
     color: var(--font-color-default);
     font-size: 17px;
@@ -42,6 +43,10 @@ body.light-theme {
 
 a {
     text-decoration: none;
+}
+
+main {
+    padding: 10px;
 }
 
 .header-container {

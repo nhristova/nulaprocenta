@@ -6,17 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/shared.css">
-    <link rel="stylesheet" href="./styles/models.css">
-    <title>Модел</title>
+    <link rel="stylesheet" href="./styles/model.css">
+    <title>модел 123</title>
 </head>
 
 <body class="light-theme">
     <script src="./scripts/header.js"></script>
-    <script>        
+    <script>
         generateHeader(['начало', 'модели', 'модел 123']);
     </script>
     <main class="model-container">
-        <div>TODO Model</div>
+        <div class="model-item-left">
+            <img class="model-item-image" src="./imgs/model-item-000.jpg" alt="модел 123">
+            <!-- TODO Add button for switching images -->
+        </div>
+        <div class="model-item-right">
+            <form id="model-item-order" class="model-item-order" action="post">
+                <div class="model-item-option">
+                    <span>размер</span>
+                    <select name="hat-size" id="hat-size">
+                        <option value="52">XXS 52-53 cm</option>
+                        <option value="54">XS 54-55 cm</option>
+                        <option value="56">S 56-57 cm</option>
+                        <option value="58" selected>M 58-59 cm</option>
+                        <option value="60">L 60-61 cm</option>
+                        <option value="62">XL 62-63 cm</option>
+                        <option value="64">XXL 64-65 cm</option>
+                    </select>
+                </div>
+                <div class="model-item-option">
+                    <span>материал</span>
+                    <select name="hat-material" id="hat-material">
+                        <option value="wool" selected>вълна</option>
+                        <option value="cotton">памук</option>
+                    </select>
+                </div>
+                <div class="model-item-option">
+                    <span>дебелина</span>
+                    <select name="hat-thickness" id="hat-thickness">
+                        <option value="1">тънка</option>
+                        <option value="2">стандартна</option>
+                        <option value="4" selected>дебела</option>
+                    </select>
+                </div>
+                <div class="model-item-option">
+                    <span>дължина</span>
+                    <!-- TODO: Make length depend on size -->
+                    <select name="hat-length" id="hat-length">
+                        <option value="21">21 cm</option>
+                        <option value="24" selected>24 cm</option>
+                        <option value="27">27 cm</option>
+                    </select>
+                </div>
+                <div class="model-item-option">
+                    <span>подплата</span>
+                    <fieldset id="hat-lining">
+                        <input type="radio" id="hat-lining-yes" name="hat-lining" value="yes">
+                        <label for="hat-lining-yes">да</label>
+                        <input type="radio" id="hat-lining-no" name="hat-lining" value="no" checked>
+                        <label for="hat-lining-no">не</label>
+                    </fieldset>
+                </div>
+                <div class="model-item-option">
+                    <span>коментар</span>
+                    <textarea name="hat-comment" id="hat-comment" cols="20" rows="5"
+                        placeholder="специални инструкции - ако шапката е за дете, въведете точна обиколка"></textarea>
+                </div>
+                <div class="model-item-summary">
+                    <div class="model-item-price">
+                        <span>цена</span>
+                        <span id="hat-price">30 лв</span>
+                    </div>
+                    <div class="model-item-submit">
+                        <button>поръчай</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
     <script async defer src="./scripts/main.js"></script>
 </body>
