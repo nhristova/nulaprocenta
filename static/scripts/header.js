@@ -2,7 +2,7 @@
 const generateHeader = (breadcrumbs) => {
     const _html = `<header class="header-container">
     <div class="header-row-top">
-        <a href="./models" class="navigation-link">
+        <a href="./models" class="logo-link">
             <img src="./imgs/home-icon.svg" width="100" alt="модели">
             <div>модели</div>
         </a>

@@ -1,0 +1,24 @@
+.qanda-container {
+    margin: 20px auto;
+}
+.question-item {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 400px) {
+    .qanda-container {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .qanda-container {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .qanda-container {
+        max-width: 600px;
+    }
+}
