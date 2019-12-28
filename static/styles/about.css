@@ -1,21 +1,27 @@
-.contacts-container {
+.about-container {
     margin: 20px auto;
 }
 
+.about-friend {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
 @media screen and (min-width: 400px) {
-    .contacts-container {
+    .about-container {
         max-width: 80%;
     }
 }
 
 @media screen and (min-width: 600px) {
-    .contacts-container {
+    .about-container {
         max-width: 70%;
     }
 }
 
 @media screen and (min-width: 900px) {
-    .contacts-container {
+    .about-container {
         max-width: 600px;
     }
 }

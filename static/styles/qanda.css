@@ -4,12 +4,6 @@
 .question-item {
     margin-bottom: 20px;
 }
-.question-item h2 {
-    font-size: 1.5em;
-}
-.question-item p {
-    margin-top: 10px;
-}
 
 @media screen and (min-width: 400px) {
     .qanda-container {
