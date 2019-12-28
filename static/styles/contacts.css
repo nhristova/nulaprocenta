@@ -1,0 +1,29 @@
+.contacts-container {
+    margin: 20px auto;
+}
+
+.contacts-container p {
+    margin-bottom: 10px;
+}
+
+.contacts-container h2 {
+    margin: 10px 0 10px 0;
+}
+
+@media screen and (min-width: 400px) {
+    .contacts-container {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .contacts-container {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .contacts-container {
+        max-width: 600px;
+    }
+}
