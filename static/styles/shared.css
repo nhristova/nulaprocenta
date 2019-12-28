@@ -96,14 +96,32 @@ h2 {
     min-width: 70px;
     text-align: center;
 }
-
-@media screen and (min-width: 600px) {
+.logo-link {
+    min-width: 70px;
+    text-align: center;
+}
+@media screen and (min-width: 900px) {
+    .header-row-top {
+        justify-content: initial;
+    }
+    .logo-link {
+        min-width: 170px;
+    }
     .header-hamburger {
         display: none;
     }
     .header-navigation {
         display: inline-flex;
         margin-top: initial;
-        width: initial;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .logo-link {
+        min-width: 300px;
+    }
+    .header-navigation {
+        max-width: 900px;
     }
 }
