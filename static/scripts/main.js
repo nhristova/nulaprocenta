@@ -9,6 +9,6 @@ hamburger.addEventListener("click", (event) => {
 const galleryInfoIcon = document.getElementById("info-icon");
 const galleryInfoBlock = document.getElementById("gallery-item-info")
 
-galleryInfoIcon.addEventListener("click", (event) => {
+galleryInfoIcon && galleryInfoIcon.addEventListener("click", (event) => {
     galleryInfoBlock.classList.toggle("gallery-item--visible")
 })
