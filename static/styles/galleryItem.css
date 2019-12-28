@@ -1,0 +1,95 @@
+.gallery-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 50vw;
+}
+
+.icon-light-gray-circle:hover,
+.icon-light-gray-poly:hover,
+.icon-light-gray-poly:hover {
+    cursor: pointer;
+}
+
+.icon-light-gray-circle:hover > circle,
+.icon-light-gray-poly:hover polygon,
+.icon-light-gray-poly:hover path {
+    fill: var(--icon-dark-background-color);
+}
+
+.gallery-item-mid {
+    width: 80%;
+    position: relative;
+}
+.gallery-item-mid img{
+    max-width: 100%;
+}
+.gallery-item-info {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+.gallery-item--visible{
+    visibility: visible;
+}
+.gallery-item-info span{
+    color: var(--font-color-inversed);
+    font-weight: bold;
+    width: 50%;
+}
+.gallery-item-info-row{
+    display: flex;
+}
+
+.gallery-item-side {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.gallery-item-side-top {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80px;
+}
+.gallery-item-side-mid {
+    display: flex;
+    flex-grow: 2;
+}
+.gallery-item-side-mid svg {
+    align-self: center;
+}
+.gallery-item-bottom {
+    text-align: center;
+    width: 100%;
+}
+
+.tooltip-holder {
+    display: inline-block;
+    position: relative;
+}
+
+.tooltip-holder .svg-tooltip {
+    width: 120px;
+    font-size: 0.8em;
+    color: var(--tooltip-font-color);
+    visibility: hidden;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip-holder:hover .svg-tooltip {
+    visibility: visible;
+}
+
+svg {
+    overflow: visible;
+}
+
+.icon-light-gray-poly:hover text {
+    visibility: visible;
+}

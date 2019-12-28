@@ -34,12 +34,16 @@
     --color1: #000;
     --color2: #e5e9f2;
     --color3: #999;
+    --color4: #DEDFE0;
+    --color5: #74D0EF;
 }
 
 body.light-theme {
     --font-color-default: var(--color1);
-    --background-icon-default: var(--color3);
+    --font-color-inversed: var(--color0);
+    --icon-dark-background-color: var(--color3);
     --border-color: var(--color2);
+    --tooltip-font-color: var(--color5);
 }
 
 a {
@@ -65,7 +69,7 @@ main {
 .header-hamburger {
     padding: 10px;
     width: 50px;
-    fill: var(--background-icon-default);
+    fill: var(--icon-dark-background-color);
 }
 .header-navigation {
     align-items: center;
