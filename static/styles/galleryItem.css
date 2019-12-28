@@ -6,7 +6,6 @@
 }
 
 .icon-light-gray-circle:hover,
-.icon-light-gray-poly:hover,
 .icon-light-gray-poly:hover {
     cursor: pointer;
 }
@@ -21,7 +20,7 @@
     width: 80%;
     position: relative;
 }
-.gallery-item-mid img{
+.gallery-item-mid img {
     max-width: 100%;
 }
 .gallery-item-info {
@@ -31,15 +30,15 @@
     transform: translate(-50%, -50%);
     visibility: hidden;
 }
-.gallery-item--visible{
+.gallery-item--visible {
     visibility: visible;
 }
-.gallery-item-info span{
+.gallery-item-info span {
     color: var(--font-color-inversed);
     font-weight: bold;
     width: 50%;
 }
-.gallery-item-info-row{
+.gallery-item-info-row {
     display: flex;
 }
 
@@ -66,30 +65,17 @@
     width: 100%;
 }
 
-.tooltip-holder {
-    display: inline-block;
-    position: relative;
-}
-
-.tooltip-holder .svg-tooltip {
-    width: 120px;
-    font-size: 0.8em;
-    color: var(--tooltip-font-color);
-    visibility: hidden;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-
-.tooltip-holder:hover .svg-tooltip {
-    visibility: visible;
-}
-
 svg {
     overflow: visible;
+    z-index: 1;
+}
+.icon-tooltip {
+    font-size: 0.8em;
+    fill: var(--tooltip-font-color);
+    visibility: hidden;
 }
 
-.icon-light-gray-poly:hover text {
+.icon-light-gray-circle:hover > .icon-tooltip,
+.icon-light-gray-poly:hover > .icon-tooltip {
     visibility: visible;
 }
