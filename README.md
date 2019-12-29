@@ -10,11 +10,15 @@ nulaprocenta.com new website to substitute the Flash version
     - [ ] Static pages
     - [ ] Painter
     - [ ] Ordering by email
+    - [ ] Price calculation per added element
 2. Store (payment on delivery only)
     - [ ] Shopping cart
     - [ ] Registration
     - [ ] Database to store orders
 3. Payment options - bank transfer, online card payment
+4. Additional features 
+    - [ ] Tags
+    - [ ] Similar items
 4. Content management functionalities
     - [ ] Load lists from database - models, gallery, blog
     - [ ] Add/edit model
@@ -37,6 +41,8 @@ nulaprocenta.com new website to substitute the Flash version
         - the user can modify the colors - when hovering over a stripe - a popup colour dial appears (centred on the cursor) - clicking a colour changes the hovered stripe color
         - add remove elements - pompom, ear flaps
     - When edit completed - a hat object is created/sent to cart and a screen-shot of the hat - price is calculated based on the hat object properties
+1. Features
+    - Similar items - search in database by hat type, thickness, colors?
 3.  Admin page 
     - Add new model
     - Add new post to blog

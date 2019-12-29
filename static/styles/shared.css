@@ -34,14 +34,15 @@
     --color1: #000;
     --color2: #e5e9f2;
     --color3: #999;
-    --color4: #DEDFE0;
-    --color5: #74D0EF;
+    --color4: #dedfe0;
+    --color5: #74d0ef;
 }
 
 body.light-theme {
     --font-color-default: var(--color1);
     --font-color-inversed: var(--color0);
     --icon-dark-background-color: var(--color3);
+    --icon-light-background-color: var(--color4);
     --border-color: var(--color2);
     --tooltip-font-color: var(--color5);
 }
@@ -96,6 +97,10 @@ h2 {
     min-width: 70px;
     text-align: center;
 }
+.navigation-link:hover .c {
+    fill: var(--icon-light-background-color);
+}
+
 .logo-link {
     min-width: 70px;
     text-align: center;
