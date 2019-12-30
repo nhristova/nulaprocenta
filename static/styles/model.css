@@ -79,6 +79,6 @@
 
 @media screen and (min-width: 900px) {
     .model-container {
-        width: 70vw;
+        width: 70%;
     }
 }

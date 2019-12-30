@@ -61,7 +61,7 @@ nulaprocenta.com new website to substitute the Flash version
         model: string, // Yoda, Thermos, custom
         size: enum, // xs, s, m, l, xl
         length: enum, // dependant on size - 21cm (to base of ear), 
-        shape: enum, // round, triangular
+        shape: enum, // oval, round, ears, (not supported triangular)
         pompoms: number,
         lining: boolean,
         thickness: number, // 1, 2, 3 
