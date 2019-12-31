@@ -387,7 +387,7 @@
             length: 21, // dependant on size - 21cm (to base of ear), 
             shape: "oval", // oval, round, ears
             lining: false,
-            pompoms: 1,
+            pompoms: 1, //  1, 2, 3, 4 (conditional on hat type)
         };
 
         let svgIds = {
@@ -430,6 +430,16 @@
                 cotton: "cotton",
                 wool: "wool"
             }
+        };
+
+        let hatTranslation = {
+            false: "не",
+            true: "да",
+            wool: "вълна",
+            cotton: "памук",
+            oval: "овална",
+            ears: "с уши",
+            round: "кръгла"
         }
 
         let refImgs = {
